@@ -1,8 +1,8 @@
 data:
     dataset_type: "cached_threedfront"
     encoding_type: "cached_autoregressive_wocm_eval"
-    dataset_directory: "path_to_dataset_directory"
-    annotation_file: "../config/diningroom_threed_front_splits.csv"
+    dataset_directory: "../data/atiss"
+    annotation_file: "../config/bedroom_threed_front_splits.csv"
     path_to_invalid_scene_ids: "../config/invalid_threed_front_rooms.txt"
     path_to_invalid_bbox_jids: "../config/black_list.txt"
     filter_fn: "no_filtering"
@@ -11,7 +11,7 @@ data:
 
 network:
     type: "autoregressive_transformer"
-    n_layers: 4
+    n_layers: 2
     n_heads: 8
     query_dimensions: 64
     value_dimensions: 64
@@ -47,4 +47,3 @@ validation:
 logger:
     type: "wandb"
     project: "autoregressive_transformer"
-

@@ -1,0 +1,17 @@
+sip==6.7.11
+cython==0.29.36
+moderngl
+numpy==1.26.2
+networkx==3.2.1
+pyrr==0.10.3
+pyyaml==6.0.1
+torch==2.0.1
+torchvision==0.15.2
+pillow==10.1.0
+scipy==1.11.4
+tqdm==4.66.1
+trimesh==4.0.8
+matplotlib==3.8.2
+wxpython
+simple_3dviz==0.6.0
+pytorch-fast-transformers==0.4.0
