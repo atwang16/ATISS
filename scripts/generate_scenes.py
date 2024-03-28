@@ -138,7 +138,6 @@ def main(argv):
         )
         # Get a floor plan
         floor_plan, tr_floor, room_mask = floor_plan_from_scene(current_scene, args.path_to_floor_plan_textures)
-        breakpoint()
 
         bbox_params = network.generate_boxes(room_mask=room_mask.to(device), device=device)
         torch.save(bbox_params, f"../data/generated/{os.environ['ROOM_TYPE']}/atiss_output_{i}.pkl")
